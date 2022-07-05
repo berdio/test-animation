@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particles</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            position: relative;
+        }
+        #particles-js{
+            width: 100%;
+            height: 100vh;
+            background: transparent;
+        }
+        .practicles__wrap{
+            position: absolute;
+            top: 0;
+            z-index: -5;
+            width: 100%;
+            height: 100%;
+            top: 0;
+        }
+        .practicles__wrap video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="particles-js">        
+    </div>
+    <div class="practicles__wrap">
+        <video src="the.mp4" autoplay muted preload="" loop></video>
+    </div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
